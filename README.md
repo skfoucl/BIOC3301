@@ -1,5 +1,6 @@
-# Project Title
+# BIOC3301 16S rRNA Soil Microbiome Analysis Project
 
+BIOC3301 16S rRNA Soil Microbiome Analysis Project involves analysis of 
 One Paragraph of project description goes here
 
 ## Getting Started
