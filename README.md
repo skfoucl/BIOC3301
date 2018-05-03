@@ -1,89 +1,48 @@
-# BIOC3301 16S rRNA Soil Microbiome Analysis Project
+# BIOC3301 16S rRNA Soil Microbiome Analysis Project 2017-18
 
-BIOC3301 16S rRNA Soil Microbiome Analysis Project involves analysis of 
-One Paragraph of project description goes here
+BIOC3301 16S rRNA Soil Microbiome Analysis Project 2017-18 involves an analysis of soil microbiome data ([Illumina MiSeq](https://www.illumina.com/systems/sequencing-platforms/miseq.html) raw sequencing data) collected from central London, mainly from Gordon Square Gardens(London WC1H 0PD) using [QIIME](http://qiime.org/) (Quantitative Insights into Microbial Ecology) pipeline.
 
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+This README.md file provides the description of batch scripts used in each analysis steps (Demultiplexing, OTU picking, Diversity analysis, Statistic analysis, etc), as well as the raw statitical results.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+Need to be connected with UCL [Aristotle](https://wiki.rc.ucl.ac.uk/wiki/RC_Systems#Aristotle)/Socrates and [SurfSara](https://www.surf.nl/en/about-surf/subsidiaries/surfsara/) Cartesius and be installed with QIIME. 
 
 ```
-Give examples
+Instructions were given by the PDF files of QIIME (SPLAT) and QIIME on Cartesius and QIIME websites. See the References.
 ```
 
-### Installing
+## Demultiplexing
 
 A step by step series of examples that tell you have to get a development env running
 
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
+## Picking OTUs
 
 Explain how to run the automated tests for this system
 
-### Break down into end to end tests
+## Diversity Analysis
 
 Explain what these tests test and why
 
-```
-Give an example
-```
 
-### And coding style tests
+## Statistic Analysis
 
 Explain what these tests test and why
 
-```
-Give an example
-```
+## References
 
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* [QIIME (SPLAT)](https://moodle.ucl.ac.uk/pluginfile.php/4487589/mod_resource/content/1/qiime.pdf) - Connecting to Aristotle/Socrates and introduction to the basic QIIME scripts.
+* [QIIME on Cartesius](https://moodle.ucl.ac.uk/pluginfile.php/4639011/mod_resource/content/1/Exercise%20Guidelines%20-%20Qiime%20on%20Cartesius.pdf) - Connecting to Cartesisus/Installing QIIME on Cartesius.
+* [QIIME Tutorials](http://qiime.org/tutorials/index.html/) - QIIME analysis scripts and analysing diversity.
+* [QIIME Scripts](http://qiime.org/scripts/index.html) - Other additional statistical tests.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the UCL icense.
 
 ## Acknowledgments
 
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
+* I would like to express my special thanks of gratitude to all the lecturers, demonstrators of the SPLAT sessions as well as our tutor for teaching, providing a guidance and encouraging to complete the assignment. Finally, I thank my teammates and the peers for the helps and supports.
+* This project has received funding from the European Union’s Horizon 2020 research and innovation
+programme under the Grant Agreement No 675451.
 
