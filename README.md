@@ -14,20 +14,17 @@ Instructions were given by the PDF files of QIIME (SPLAT) and QIIME on Cartesius
 
 ## Demultiplexing
 
-A step by step series of examples that tell you have to get a development env running
+DX_joined.pbs
 
 ## Picking OTUs
-
-Explain how to run the automated tests for this system
+BIOM_summary.pbs
+OPEN_OTUS_PICK.pbs
 
 ## Diversity Analysis
 
-Explain what these tests test and why
+CD_SILVA
 
-
-## Statistic Analysis
-
-Explain what these tests test and why
+cdout_opened_SILVA_fxmap.zip = OUTPUT of corediversity
 
 ## References
 
