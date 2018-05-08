@@ -1,0 +1,24 @@
+#!/bin/bash
+#SBATCH -t 1:00:00
+#SBATCH -n 24
+#SBATCH -p short
+
+#Load modules to run python
+module load eb
+module load Miniconda2
+
+source deactivate
+
+# loading virtualenv
+echo "loading virtualenv"
+source activate qiime1
+
+# setting temporary directory
+export TMPDIR=~/qiime_tmp
+
+# Diversity analyses
+echo "Diversity analyses"
+time core_diversity_analyses.py --recover_from_failure -o cdout_opened_SILVA_fxmap -a -O 16 -i /home/cbmucl15/2018_02_smb/opened_otus_SILVA/otu_table_mc2_w_tax_no_pynast_failures.biom -m /home/cbmucl15/2018_02_smb/fx_map.tsv -t /home/cbmucl15/2018_02_smb/opened_otus_SILVA/rep_set.tre -e 741
+
+source deactivate
+ 
