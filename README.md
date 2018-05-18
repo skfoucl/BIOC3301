@@ -17,14 +17,15 @@ Instructions were given by the PDF files of QIIME (SPLAT) and QIIME on Cartesius
 DX_joined.pbs
 
 ## Picking OTUs
-BIOM_summary.pbs
+
+opened_SILVA_BIOM_summary.pbs
 OPEN_OTUS_PICK.pbs
 
 ## Diversity Analysis
 
 CD_SILVA
 
-cdout_opened_SILVA_fxmap.zip = OUTPUT of corediversity
+cdout_opened_SILVA_fxmap.zip = OUTPUT of core_diversity_analyses.py
 
 ## References
 
