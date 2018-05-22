@@ -1,0 +1,23 @@
+#SBATCH -n 24
+#SBATCH -p normal
+
+#Load modules to run python
+module load eb
+module load Miniconda2
+
+source deactivate
+
+# loading virtualenv
+echo "loading virtualenv"
+source activate qiime1
+
+# setting temporary directory
+export TMPDIR=~/qiime_tmp
+
+# Beta significance
+echo "Beta significance"
+time beta_significance.py -i ~/2018_02_smb/opened_otus_SILVA/otu_table_mc2_w_tax_no_pynast_failures.biom -t ~/2018_02_smb/opened_otus_SILVA/rep_set.tre -s unweighted_unifrac -o unw_bet_sig.txt
+
+
+source deactivate
+-- INSERT --                                                  24,1          Bot
