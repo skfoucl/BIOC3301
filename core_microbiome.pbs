@@ -1,0 +1,27 @@
+#!/bin/bash
+#SBATCH -t 1:00:00
+#SBATCH -n 24
+#SBATCH -p short
+
+#Load modules to run python
+module load eb
+module load Miniconda2
+
+source deactivate
+
+# loading virtualenv
+echo "loading virtualenv"
+source activate qiime1
+
+# setting temporary directory
+export TMPDIR=~/qiime_tmp
+
+# Core microbiome analyses
+echo "Core microbiome"
+time compute_core_microbiome.py -i ~/2018_02_smb/opened_otus_SILVA/otu_table_mc2_w_tax_no_pynast_failures.biom -o otu_table_core
+
+source deactivate
+~
+~
+~
+"core_microbiome.pbs" 23L, 475C                                             21,1          All
